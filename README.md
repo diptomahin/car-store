@@ -53,7 +53,7 @@ The **Car Store API** provides backend functionality for managing car products a
 - **Backend**: Node.js, Express.js  
 - **Database**: MongoDB  
 - **ORM**: Mongoose  
-- **API Testing**: Postman, Thunder Client  
+- **API Testing**: Postman
 - **Deployment**: Vercel or any Node.js hosting service  
 
 ---
@@ -64,5 +64,60 @@ To set up the project locally, follow these steps:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/car-store.git
+git clone https://github.com/diptomahin/car-store.git
 cd car-store
+
+### 2. Install Dependencies
+```bash
+npm install
+
+
+### 3. Environment Variables
+```bash
+PORT=5000  # The port number for the API
+DATABASE_URL=your_mongodb_connection_url  # MongoDB connection URL
+
+## 📦 Running the Project
+
+Start the development server using the following command:
+
+```bash
+npm run dev
+
+## 🔧 API Endpoints
+
+| Method | Endpoint                | Description                     |
+|--------|-------------------------|---------------------------------|
+| POST   | `/api/cars`              | Add a new car                   |
+| GET    | `/api/cars`              | Retrieve all cars               |
+| GET    | `/api/cars/:id`          | Retrieve a single car by ID     |
+| PUT    | `/api/cars/:id`          | Update a car by ID              |
+| DELETE | `/api/cars/:id`          | Delete a car by ID              |
+| POST   | `/api/orders`            | Place an order                  |
+| GET    | `/api/orders/revenue`    | Get total revenue               |
+| GET    | `/api/orders`            | Retrieve all orders             |
+
+
+## 🛠️ Example Request Payloads
+
+### 🔸 Add a Car
+```json
+{
+  "name": "Camry",
+  "brand": "Toyota",
+  "price": 30000,
+  "category": "Sedan",
+  "description": "A modern, reliable sedan.",
+  "quantity": 10,
+  "inStock": true
+}
+
+### 🔸 Place an Order
+```json
+{
+  "email": "customer@example.com",
+  "car": "6650b1e9b8c3d75b98a63b14",
+  "quantity": 2,
+  "totalPrice": 60000
+}
+
