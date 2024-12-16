@@ -66,11 +66,11 @@ To set up the project locally, follow these steps:
 ```bash
 git clone https://github.com/diptomahin/car-store.git
 cd car-store
-
+```
 ### 2. Install Dependencies
 ```bash
 npm install
-
+```
 
 ### 3. Environment Variables
 ```bash
