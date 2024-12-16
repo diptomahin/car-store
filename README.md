@@ -83,9 +83,9 @@ Start the development server using the following command:
 
 ```bash
 npm run dev
-
+```
 ## 🔧 API Endpoints
-
+```bash
 | Method | Endpoint                | Description                     |
 |--------|-------------------------|---------------------------------|
 | POST   | `/api/cars`              | Add a new car                   |
