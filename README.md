@@ -76,7 +76,7 @@ npm install
 ```bash
 PORT=5000  # The port number for the API
 DATABASE_URL=your_mongodb_connection_url  # MongoDB connection URL
-
+```
 ## 📦 Running the Project
 
 Start the development server using the following command:
@@ -97,7 +97,7 @@ npm run dev
 | GET    | `/api/orders/revenue`    | Get total revenue               |
 | GET    | `/api/orders`            | Retrieve all orders             |
 
-
+```
 ## 🛠️ Example Request Payloads
 
 ### 🔸 Add a Car
@@ -111,7 +111,7 @@ npm run dev
   "quantity": 10,
   "inStock": true
 }
-
+```
 ### 🔸 Place an Order
 ```json
 {
@@ -120,4 +120,4 @@ npm run dev
   "quantity": 2,
   "totalPrice": 60000
 }
-
+```
